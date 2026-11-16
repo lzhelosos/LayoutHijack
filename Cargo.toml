@@ -1,0 +1,16 @@
+[package]
+name = "LayoutHijack"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+chrono = "0.4"
+ctrlc = "3.4"
+winapi = { version = "0.3.9", features = [
+    "winuser", "windef", "minwindef", "winreg", "winnt",
+    "processthreadsapi", "libloaderapi", "shellapi", "wincon",
+] }
+
+[build-dependencies]
+embed-resource = "3"
